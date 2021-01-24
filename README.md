@@ -1,10 +1,10 @@
 # Crust-Tastic Jekyll-Theme
-A configurable Jekyll theme optimized for Github Pages
+A configurable Jekyll theme optimized for GitHub Pages
 
 ## Setup
 Want to use this theme? Easy! Simply add these lines to your `_config.yml`:
 ```yaml
-remote_theme: regulad/crust-tastic
+remote_theme: regulad/crust-tastic@main
 
 plugins:
   - github-pages

@@ -1,5 +1,5 @@
 # Crust-Tastic Jekyll-Theme
-A configurable Jekyll theme optimized for Github Pages
+A configurable Jekyll theme optimized for GitHub Pages
 
 Check out [this project on GitHub](https://github.com/regulad/crust-tastic).
 

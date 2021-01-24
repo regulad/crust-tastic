@@ -7,6 +7,5 @@ plugins:
   - github-pages
 
 # Theme
-remote_theme: regulad/crust-tastic
-show_header: true
-show_description: true
+remote_theme: regulad/crust-tastic@main
+navigation: true
