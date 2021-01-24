@@ -1,0 +1,12 @@
+# Site Info
+title: Regulad's Crust-Tastic Jekyll Theme
+name: Regulad's Crust-Tastic Jekyll Theme
+
+# Plugins
+plugins:
+  - github-pages
+
+# Theme
+remote_theme: regulad/crust-tastic
+show_header: true
+show_description: true

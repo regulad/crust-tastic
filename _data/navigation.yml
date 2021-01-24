@@ -1,0 +1,6 @@
+list_title: Navigation
+entries:
+  - title: Pages
+    subfolderitems:
+      - page: Home
+        url: /
