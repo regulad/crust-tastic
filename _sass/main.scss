@@ -1,110 +1,73 @@
-// Body
+@import "colors";
 
+// Body
 body {
+    min-height: 100%;
     font-size: 16px;
     line-height: 1.5;
     overflow: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--secondary-invert);
+    background-color: var(--primary);
+    background-image: linear-gradient(var(--secondary), var(--primary));
 }
 
 // Container
-
 .container {
     width: 75%;
     max-width: 1200px;
     margin: 25px auto;
 }
 
-#main_content section {
-    display: block;
-    margin: 10px 0;
+#main_content {
+    section {
+        margin: 10px 0;
+    }
+    a:link, a:visited {
+        color: var(--active-invert);
+    }
+    a:hover, a:active {
+        color: var(--active);
+    }
 }
 
 // List
-
-ul {
+ul, ol {
     margin: 3;
     padding: 0;
-}
-
-li {
-    line-height: 1.4;
-    margin: 0 3;
+    li {
+        line-height: 1.4;
+        margin: 0 3;
+    }
 }
 
 // Headings
-
 .headings, .headings * {
-    text-decoration: none;
-    h1 {
-      line-height: 1.5;
-      font-weight: bold;
+    a:link, a:visited, a:hover, a:active {
+        color: var(--primary-invert);
+        text-decoration: none;
     }
-    h2 {
-      font-size: 18px;
-      font-weight: 300;
-    }
-}
-  
-#downloads, #downloads * {
-    display: inline-block;
-    text-align: center;
-    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
+    color: var(--primary-invert);
+    font-weight: bold;
     letter-spacing: -0.03em;
     margin: 0 auto;
 }
 
 h1 {
-    font-size: 30px;
+    line-height: 1.5;
 }
 
 h2 {
-    font-size: 24px;
-}
-
-h3 {
     font-size: 18px;
 }
 
-h4 {
-    font-size: 14px;
-}
-
-h5 {
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-h6 {
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
+// Tables
 dt {
     font-style: italic;
     font-weight: bold;
-}
-
-blockquote {
-    padding-left: 10px;
-    border-left: 1px dotted;
-}
-
-pre {
-    border: 1px solid;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 2px;
-    word-wrap: normal;
-    overflow: auto;
-    overflow-y: hidden;
-}
-
-table {
-    margin: 0 0 20px 0;
 }
 
 th {
@@ -123,18 +86,36 @@ hr {
     margin: 0 0;
 }
 
-// Navigation
+// Pre-ish
+blockquote {
+    padding-left: 10px;
+    border-left: 1px dashed;
+}
 
-#navigation, #navigation * {
+pre {
+    border: 1px solid;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 2px;
+    word-wrap: normal;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+// Navigation
+#main_footer, #main_footer * {
     display: inline-block;
     li {
         margin-right: 5px;
     }
+    img {
+        width: 16px;
+        height: 16px;
+    }
 }
 
 // Buttons
-
-.btn, button {
+.button, button {
     padding: 8px 18px;
     border-radius: 50px;
     border: 2px solid;

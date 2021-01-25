@@ -1,19 +1,25 @@
 # Crust-Tastic Jekyll-Theme
 A configurable Jekyll theme optimized for GitHub Pages
 
-Check out [this project on GitHub](https://github.com/regulad/crust-tastic).
+Here is a [link](/)
 
 # h1
+This is text under an h1 heading.
 
 ## h2
+This is text under an h1 heading.
 
 ### h3
+This is text under an h1 heading.
 
 #### h4
+This is text under an h1 heading.
 
 ##### h5
+This is text under an h1 heading.
 
 ###### h6
+This is text under an h6 heading.
 
 *italic*
 
@@ -27,6 +33,9 @@ Check out [this project on GitHub](https://github.com/regulad/crust-tastic).
 # syntax highlighting
 ```
 
-Column | Column
+Column 1 | Column 2
 --- | ---
-Row | Row
+Row 1, Column 1 | Row 1, Column 2
+
+- [ ] Inactive Check
+- [x] Active Check

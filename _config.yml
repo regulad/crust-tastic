@@ -1,6 +1,7 @@
 # Site Info
 title: Regulad's Crust-Tastic Jekyll Theme
 name: Regulad's Crust-Tastic Jekyll Theme
+author: regulad
 
 # Plugins
 plugins:
@@ -9,3 +10,4 @@ plugins:
 # Theme
 remote_theme: regulad/crust-tastic@main
 navigation: true
+github_info: true

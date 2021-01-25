@@ -7,15 +7,8 @@ layout: head
     <section id="title">
       <a href="{{ '/' | relative_url }}"><h1>{{ site.title | default: site.github.repository_name }}</h1></a>
         {% if site.github_info %}
-          <div id="github_info">
+          <div id="github_desc">
             <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-            <section id="downloads">
-              <ul>
-                <li><a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a></li>
-                <li><a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a></li>
-                <li><a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a></li>
-              </ul>
-            </section>
           </div>
         {% endif %}
     </section>
@@ -30,7 +23,7 @@ layout: head
 <hr>
 <div class="container">
   <footer id="main_footer" class="headings">
-    {% if site.navigation %}
+    {% if site.navigation == 'subfolder' %}
       <section id="navigation">
         <h4>{{ site.data.navigation.list_title }}</h4>
         {% for item in site.data.navigation.entries %}
@@ -38,11 +31,27 @@ layout: head
           <h5>{{ item.title }}</h5>
           <ul>
             {% for entry in item.subfolderitems %}
-              <li><a href="{{ entry.url }}" class="btn">{{ entry.page }}</a></li>
+              <li><a href="{{ item.url }}" class="button">{{ item.page }}</a></li>
             {% endfor %}
           </ul>
         {% endfor %}
       </section>
-    {% endif %}  
+    {% elsif site.navigation %}
+      <section id="navigation">
+        <h4>{{ site.data.navigation.list_title }}</h4>
+        <ul>
+          {% for item in site.data.navigation.entries %}
+            <li><a href="{{ item.url }}" class="button">{{ item.page }}</a></li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+    {% if site.github_info %}
+      <br>
+      <section id="github_links">
+        <h4>View this site on GitHub</h4>
+        <a href="{{ site.github.repository_url }}" class="button"><img alt="GitHub Logo" src="{{ '/assets/images/GitHub-Mark-120px-plus.png' | relative_url }}"> View on GitHub</a>
+      </section>
+    {% endif %}
   </footer>
 </div>
