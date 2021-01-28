@@ -39,3 +39,6 @@ Row 1, Column 1 | Row 1, Column 2
 
 - [ ] Inactive Check
 - [x] Active Check
+
+## Image
+![Sus](https://i.imgur.com/ID8CDxI.jpg)

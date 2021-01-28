@@ -1,8 +1,26 @@
-@import "colors";
+// Dark Mode Support
+:root {
+    --primary: white;
+    --primary-invert: black;
+    --secondary: lightgrey;
+    --secondary-invert: #222;
+    --active: blue;
+    --active-invert: lightblue;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: black;
+        --primary-invert: white;
+        --secondary: #222;
+        --secondary-invert: lightgrey;
+        --active: lightblue;
+        --active-invert: blue;
+    }
+}
 
 // Body
 body {
-    min-height: 100%;
     font-size: 16px;
     line-height: 1.5;
     overflow: auto;
@@ -16,6 +34,9 @@ body {
     width: 75%;
     max-width: 1200px;
     margin: 25px auto;
+    * {
+        max-width: 100%;
+    }
 }
 
 #main_content {
