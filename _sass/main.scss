@@ -55,10 +55,10 @@ body {
 }
 
 // List
-ul, ol {
+ul, ol, nav {
     margin: 3;
     padding: 0;
-    li {
+    li, a {
         line-height: 1.4;
         margin: 0 3;
     }
@@ -128,7 +128,7 @@ pre {
 // Navigation
 #main_footer, #main_footer * {
     display: inline-block;
-    li {
+    nav a {
         margin-right: 5px;
     }
 }
