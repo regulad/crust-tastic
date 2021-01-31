@@ -58,10 +58,15 @@ body {
 ul, ol, nav {
     margin: 3;
     padding: 0;
-    li, a {
+    li {
         line-height: 1.4;
         margin: 0 3;
     }
+}
+
+nav a {
+    line-height: 1.4;
+    margin: 0 3;
 }
 
 // Headings
