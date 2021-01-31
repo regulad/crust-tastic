@@ -3,26 +3,11 @@ title: Regulad's Crust-Tastic Jekyll Theme
 name: Regulad's Crust-Tastic Jekyll Theme
 author: regulad
 
-# Jekyll
-remote_theme: regulad/crust-tastic@v1.0.0
-
-# Defaults
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: "drafts"
-    values:
-      layout: "post"
 # Plugins
 plugins:
   - github-pages
 
-# Elements
+# Theme
+remote_theme: regulad/crust-tastic@main
+navigation: true
 github_info: true

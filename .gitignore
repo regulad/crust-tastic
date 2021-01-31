@@ -5,6 +5,3 @@ _site/
 .jekyll-metadata
 *.log
 Gemfile.lock
-
-# vscode
-.vscode/
