@@ -1,0 +1,12 @@
+<div class="container">
+  <header id="main_header" class="headings">
+    <section id="title">
+      <a href="{{ '/' | relative_url }}"><h1>{{ site.title | default: site.github.repository_name }}</h1></a>
+        {% if site.github_info %}
+          <div id="github_desc">
+            <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+          </div>
+        {% endif %}
+    </section>
+  </header>
+</div>
