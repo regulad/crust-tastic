@@ -4,8 +4,8 @@
   --primary-invert: black;
   --secondary: lightgrey;
   --secondary-invert: #222;
-  --active: blue;
-  --active-invert: lightblue;
+  --active: #5b84c8;
+  --active-invert: blue;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,7 +14,7 @@
       --primary-invert: white;
       --secondary: #222;
       --secondary-invert: lightgrey;
-      --active: lightblue;
-      --active-invert: blue;
+      --active: blue;
+      --active-invert: #5b84c8;
   }
 }
