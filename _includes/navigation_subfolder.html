@@ -1,0 +1,12 @@
+<section id="navigation">
+  <h4>{{ site.data.navigation.list_title }}</h4>
+  {% for item in site.data.navigation.entries %}
+    <br>
+    <h5>{{ item.title }}</h5>
+    <nav>
+      {% for entry in item.subfolderitems %}
+        <a href="{{ entry.url }}" class="button">{{ entry.page }}</a>
+      {% endfor %}
+    </nav>
+  {% endfor %}
+</section>
