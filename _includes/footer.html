@@ -1,14 +1,14 @@
 <div class="container">
   <footer id="main_footer" class="headings">
     {% if site.navigation == 'subfolder' %}
-      {% include navigation_subfolder.html %}
+      {% include footer/navigation_subfolder.html %}
       <br>
     {% elsif site.navigation %}
-      {% include navigation.html %}
+      {% include footer/navigation.html %}
       <br>
     {% endif %}
     {% if site.github_info %}
-      {% include github_links.html %}
+      {% include footer/github_links.html %}
     {% endif %}
   </footer>
 </div>

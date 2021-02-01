@@ -20,9 +20,24 @@ defaults:
       type: "drafts"
     values:
       layout: "post"
+
 # Plugins
 plugins:
   - github-pages
 
 # Elements
 github_info: true
+
+# Optimization
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
+
+sass:
+  style: compressed

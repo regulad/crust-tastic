@@ -2,7 +2,14 @@
 A configurable Jekyll theme optimized for GitHub Pages
 
 ## Setup
-Want to use this theme? Easy! Simply add these lines to your `_config.yml`:
+Want to use this theme?
+
+### New Site
+If you are making a new site, just use [this template (regulad/crust-tastic-template)](https://github.com/regulad/crust-tastic-template).
+
+### Existing Site
+Want to migrate your site to this theme? Simply add these lines to your `_config.yml`:
+
 ```yaml
 remote_theme: regulad/crust-tastic@main
 
@@ -11,6 +18,7 @@ plugins:
 ```
 
 Make sure your Gemfile is setup correctly, too.
+
 ```ruby
 source 'https://rubygems.org'
 group :jekyll_plugins do
@@ -25,7 +33,9 @@ end
 
 ### Navigation
 * `navigation: truthy/falsey, or "subfolder"` Controls the navigation in the footer. See [my demo website](https://regulad.xyz/crust-tastic-demo/) for a full example. Subfolder enables subfolders.
+
 Subfolder Example:
+
 ```yaml
 list_title: Navigation
 entries:

@@ -1,0 +1,14 @@
+<!-- Lazily Load CSS Stylesheet -->
+<!-- From blog.webjeda.com -->
+<noscript>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' |  relative_url }}">
+</noscript>
+<script>
+  (function() {
+    var cssMain = document.createElement('link');
+    cssMain.href = '{{ '/assets/css/style.css' |  relative_url }}';
+    cssMain.rel = 'stylesheet';
+    cssMain.type = 'text/css';
+    document.getElementsByTagName('head')[0].appendChild(cssMain);
+  })();
+</script>
