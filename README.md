@@ -20,11 +20,11 @@ end
 
 ## Configuration
 * `github_info: truthy/falsey` Controls the GitHub description & link.
-* `favicon: truthy/falsey` Controls the favicon of the webpage. If you would like to use a custom path, subsitute `truthy/falsey` with `/path/to/favicon`, otherwise it will use the root of the site.
-* `gtag: {gtag-id}` Controls site gtag. If a falsey value is provided, then gtag is diabled.
+* `favicon: truthy/falsey` Controls the favicon of the webpage. If you would like to use a custom path, substitute `truthy/falsey` with `/path/to/favicon`, otherwise it will use the root of the site.
+* `gtag: {gtag-id}` Controls site gtag. If a falsey value is provided, then gtag is disabled.
 
 ### Navigation
-* `navigation: truthy/falsey, or "subfolder"` Controls the navigation in the footer. See [my demo website](https://regulad.xyz/crust-tastic/) for a full example. Subfolder enables subfolders.
+* `navigation: truthy/falsey, or "subfolder"` Controls the navigation in the footer. See [my demo website](https://regulad.xyz/crust-tastic-demo/) for a full example. Subfolder enables subfolders.
 Subfolder Example:
 ```yaml
 list_title: Navigation
