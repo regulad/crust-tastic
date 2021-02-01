@@ -1,11 +1,10 @@
-<head>
-  {% seo %}
-  {% include head/css_load.html file="/assets/css/style.css" %}
-  {% include head/css_load.html file="https://raw.githubusercontent.com/jwarby/pygments-css/master/default.css" %}
-  {% if site.favicon %}
-    {% include head/favicon.html %}
-  {% endif %}
-  {% if site.gtag %}
-    {% include head/gtag.html %}
-  {% endif %}
-</head>
+<!-- Head -->
+{% seo %}
+{% include head/css_load.html file="/assets/css/style.css" %}
+{% include head/css_load.html file="https://raw.githubusercontent.com/jwarby/pygments-css/master/default.css" %}
+{% if site.favicon %}
+  {% include head/favicon.html %}
+{% endif %}
+{% if site.gtag %}
+  {% include head/gtag.html %}
+{% endif %}

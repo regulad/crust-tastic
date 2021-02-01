@@ -4,7 +4,7 @@ name: Regulad's Crust-Tastic Jekyll Theme
 author: regulad
 
 # Jekyll
-remote_theme: regulad/crust-tastic@v1.0
+remote_theme: regulad/crust-tastic@v1.1 
 
 # Defaults
 defaults:

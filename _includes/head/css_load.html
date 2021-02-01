@@ -1,12 +1,12 @@
-<!-- Lazily Load CSS Stylesheet -->
-<!-- From blog.webjeda.com -->
+<!-- Lazily Load CSS Stylesheet From blog.webjeda.com
+file is the stylesheet being loaded-->
 <noscript>
-  <link rel="stylesheet" href="{{ include.file }}">
+  <link rel="stylesheet" href="{{ include.file | relative_url }}">
 </noscript>
 <script>
   (function() {
     var cssMain = document.createElement('link');
-    cssMain.href = '{{ include.file }}';
+    cssMain.href = '{{ include.file | relative_url }}';
     cssMain.rel = 'stylesheet';
     cssMain.type = 'text/css';
     document.getElementsByTagName('head')[0].appendChild(cssMain);

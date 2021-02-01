@@ -1,4 +1,4 @@
-// Colors
+// Light Colors
 :root {
   --primary: white;
   --primary-invert: black;
@@ -8,6 +8,7 @@
   --active-invert: blue;
 }
 
+// Dark Colors
 @media (prefers-color-scheme: dark) {
   :root {
       --primary: black;
