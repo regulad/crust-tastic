@@ -26,17 +26,13 @@ group :jekyll_plugins do
 end
 ```
 
-## Custom Configuration
-* ### Content
-  * `github_info: truthy/falsey` Enables/Disables the GitHub description & link.
-    * Default: `false`
-  * `navigation: truthy/falsey, or "subfolder"` Enables/Disables navigation in the footer. Subfolder sorts it into subfolders.
-    * Default: `false`
-* ### Extra 
-  * `favicon: /path/to/favicon/` Controls site favicon. If a falsey value is provided, then the favicon will be disabled. 
-    * Default: `false`
-  * `gtag: {gtag-id}` Controls site gtag. If a falsey value is provided, then gtag is disabled.
-    * Default: `false`
+## Configuration
+* `github_info: truthy/falsey` Controls the GitHub description & link.
+* `favicon: truthy/falsey` Controls the favicon of the webpage. If you would like to use a custom path, substitute `truthy/falsey` with `/path/to/favicon`, otherwise it will use the root of the site.
+* `gtag: {gtag-id}` Controls site gtag. If a falsey value is provided, then gtag is disabled.
+
+### Navigation
+* `navigation: truthy/falsey, or "subfolder"` Controls the navigation in the footer. See [my demo website](https://regulad.xyz/crust-tastic-demo/) for a full example. Subfolder enables subfolders.
 
 Subfolder Example:
 
