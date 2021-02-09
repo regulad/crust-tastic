@@ -110,10 +110,10 @@ pre {
 }
 
 // Navigation
-#main_footer, #main_footer * {
+#main_footer * {
     display: inline-block;
-    nav a {
-        margin: 2px 0px;
+    a.button {
+        margin-left: 4px;
     }
 }
 
