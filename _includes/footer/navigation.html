@@ -2,7 +2,7 @@
   <h4>{{ site.data.navigation.list_title }}</h4>
   <nav>
     {% for item in site.data.navigation.entries %}
-      <a href="{{ item.url | relative_url }}" class="button">{{ item.page }}</a>
+      <a href="{{ item.url }}" class="button">{{ item.page }}</a>
     {% endfor %}
   </nav>
 </section>
