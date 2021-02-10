@@ -25,6 +25,9 @@ defaults:
 plugins:
   - github-pages
 
+whitelist:
+  - github-pages
+
 # Elements
 github_info: true
 
