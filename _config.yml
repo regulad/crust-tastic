@@ -30,6 +30,7 @@ whitelist:
 
 # Elements
 github_info: true
+gtranslate: true
 
 # Optimization
 compress_html:

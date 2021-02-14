@@ -2,13 +2,18 @@
   <footer id="main_footer" class="headings">
     {% if site.navigation == 'subfolder' %}
       {% include footer/navigation_subfolder.html %}
-      <br>
     {% elsif site.navigation %}
       {% include footer/navigation.html %}
+    {% endif %}
+    {% if site.navigation %}
       <br>
     {% endif %}
     {% if site.github_info %}
       {% include footer/github_links.html %}
+    {% endif %}
+    <br>
+    {% if site.gtranslate %}
+      {% include footer/gtranslate_element.html %}
     {% endif %}
   </footer>
 </div>

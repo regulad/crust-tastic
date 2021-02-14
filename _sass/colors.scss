@@ -2,19 +2,25 @@
 :root {
   --primary: white;
   --primary-invert: black;
-  --secondary: lightgrey;
-  --secondary-invert: #222;
+  --secondary: #CCC;
+  --secondary-invert: #1C1C1C;
   --active: blue;
   --active-invert: purple;
+}
+body {
+  scrollbar-color: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
       --primary: black;
       --primary-invert: white;
-      --secondary: #222;
-      --secondary-invert: lightgrey;
+      --secondary: #1C1C1C;
+      --secondary-invert: #CCC;
       --active: blue;
       --active-invert: purple;
+  }
+  body {
+    scrollbar-color: dark;
   }
 }
