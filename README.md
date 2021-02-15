@@ -1,5 +1,5 @@
-# Crust-Tastic Jekyll-Theme
-A configurable Jekyll theme optimized for GitHub Pages
+# Crust-Tastic Jekyll Theme
+A lightweight & versatile Jekyll theme built for Github-Pages
 
 ## Setup
 Want to use this theme?
@@ -26,7 +26,7 @@ group :jekyll_plugins do
 end
 ```
 
-## Configuration
+## _config.yml options
 ***Nothing* is enabled by default!** Make sure to enable anything you want.
 * `github_info: truthy/falsey` Controls the GitHub description & link.
 * `favicon: truthy/falsey` Controls the favicon of the webpage. If you would like to use a custom path, substitute `truthy/falsey` with `/path/to/favicon`, otherwise it will use the root of the site.
@@ -46,3 +46,6 @@ entries:
       - page: Home
         url: /
 ```
+
+## Custom SCSS
+For custom SCSS, check [_sass/README.md](https://github.com/regulad/crust-tastic/blob/main/_sass/README.md).

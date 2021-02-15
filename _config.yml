@@ -1,10 +1,9 @@
 # Site Info
-title: Regulad's Crust-Tastic Jekyll Theme
-name: Regulad's Crust-Tastic Jekyll Theme
+title: A Site Built Using Regulad's Crust-Tastic Jekyll Theme
 author: regulad
 
-# Jekyll
-remote_theme: regulad/crust-tastic@v1.0
+# Theme
+remote_theme: regulad/crust-tastic@v2.0
 
 # Defaults
 defaults:
