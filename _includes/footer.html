@@ -1,19 +1,19 @@
 <div class="container">
   <footer id="main_footer" class="headings">
-    {% if site.crust_tastic.navigation == 'subfolder' %}
+    {% if site.navigation == 'subfolder' %}
       {% include footer/navigation_subfolder.html %}
-    {% elsif site.crust_tastic.navigation %}
+    {% elsif site.navigation %}
       {% include footer/navigation.html %}
     {% endif %}
-    {% if site.crust_tastic.navigation %}
+    {% if site.navigation %}
       <br>
     {% endif %}
-    {% if site.crust_tastic.github_info %}
+    {% if site.github_info %}
       {% include footer/github_links.html %}
     {% endif %}
     <br>
-    {% if site.google_translate %}
-      {% include footer/google_translate_element.html %}
+    {% if site.gtranslate %}
+      {% include footer/gtranslate_element.html %}
     {% endif %}
   </footer>
 </div>
