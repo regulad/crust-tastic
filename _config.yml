@@ -1,10 +1,3 @@
-# Site Info
-title: A Site Built Using Regulad's Crust-Tastic Jekyll Theme
-author: regulad
-
-# Theme
-remote_theme: regulad/crust-tastic@v2.0
-
 # Defaults
 defaults:
   -
@@ -29,9 +22,10 @@ whitelist:
 
 # Elements
 crust_tastic:
-  github_info: true
-  google_translate: true
-  skin: stock
+  stylesheets:
+    - url: assets/css/style.css
+    - url: assets/css/highlight.css
+    - url: https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap
 
 # Optimization
 compress_html:
