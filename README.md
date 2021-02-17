@@ -46,7 +46,7 @@ crust_tastic:
 ```
 
 ### Navigation
-* `navigation: truthy/falsey, or "subfolder"` Controls the navigation in the footer. See [my demo website](https://regulad.xyz/crust-tastic-demo/) for a full example. Subfolder enables subfolders.
+* `navigation: truthy/falsey, or "subfolder"` Controls the navigation in the footer. See [my demo website](https://regulad.xyz/crust-tastic/) for a full example. Subfolder enables subfolders.
 
 Subfolder Example:
 
@@ -61,7 +61,3 @@ entries:
 
 ## Custom SCSS
 For custom SCSS, check [_sass/README.md](https://github.com/regulad/crust-tastic/blob/main/_sass/README.md).
-
-{% for item in site.crust_tastic.stylesheets %}
-  <p>url: {{ item.url }}</p>
-{% endfor %}
