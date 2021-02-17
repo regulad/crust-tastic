@@ -1,4 +1,4 @@
 ---
 ---
 
-@import "stock/main";
+@import "{{ site.crust_tastic.skin | default: stock }}/main";

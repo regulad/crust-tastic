@@ -28,8 +28,10 @@ whitelist:
   - github-pages
 
 # Elements
-github_info: true
-gtranslate: true
+crust_tastic:
+  github_info: true
+  google_translate: true
+  skin: stock
 
 # Optimization
 compress_html:
