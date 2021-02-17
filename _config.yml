@@ -21,11 +21,6 @@ whitelist:
   - github-pages
 
 # Elements
-crust_tastic:
-  stylesheets:
-    - url: assets/css/style.css
-    - url: assets/css/highlight.css
-    - url: https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap
 
 # Optimization
 compress_html:
