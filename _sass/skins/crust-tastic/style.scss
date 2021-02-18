@@ -1,30 +1,40 @@
-// Variables
-@import "variables";
+// Colors
+:root {
+  --primary: #{$primary};
+  --primary-invert: #{invert($primary, $weight: 100%)};
+  --secondary: #{$secondary};
+  --secondary-invert: #{invert($secondary, $weight: 100%)};
+  --active: #{$active};
+  --inactive: #{$inactive};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+      --primary: #{invert($primary, $weight: 100%)};
+      --primary-invert: #{$primary};
+      --secondary: #{invert($secondary, $weight: 100%)};
+      --secondary-invert: #{$secondary};
+  }
+}
 
 // Body
 body {
   color: var(--primary-invert);
   background-color: var(--secondary);
-  font-family: 'Roboto', sans-serif;
-  word-wrap: break-word;
+  font-family: $font-face;
   font-size: $font-size;
-  * {
-    max-width: 100%;
-    max-height: 100%;
-  }
+  display: flex;
+  flex-direction: column;
+  margin: 0 0;
 }
 
 // Containerization
 .container {
   width: $container-width;
   max-width: $max-container-width;
-  margin: 1.92em auto;
-}
-
-#main_content {
-  section {
-    margin: 0.5em 0;
-  }
+  margin: 0.6em auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 // Links
@@ -49,6 +59,7 @@ nav a {
 
 // Headings
 .headings {
+  margin: 0.8em auto;
   a {
     color: var(--primary-invert);
     text-decoration: none;
@@ -58,67 +69,68 @@ nav a {
 h1, h2, h3, h4, h5, h6 {
   color: var(--primary-invert);
   font-weight: bold;
-  margin: 0 auto;
 }
 
 h1 {
+  margin: 0.47em auto;
   font-size: 2em; 
 }
 
 h2 {
+  margin: 0.63em auto;
   font-size: 1.5em; 
 }
 
 h3 {
+  margin: 0.8em auto;
   font-size: 1.17em; 
 }
 
 h4 {
+  margin: 1.13em auto;
   font-size: 1.12em; 
 }
 
 h5 {
+  margin: 1.47em auto;
   font-size: .83em; 
 }
 
 h6 {
+  margin: 2.13em auto;
   font-size: .75em; 
 }
 
 // Tables
 table {
   text-align: left;
+  th, td {
+    padding: 5px 10px;
+  }
+  th {
+    font-weight: bold;
+    border-bottom: 1px $border-style;
+  }
 }
 
-th {
-  font-weight: bold;
-  border-bottom: 1px dashed;
-}
-
-th, td {
-  padding: 5px 10px;
-}
 
 // Divides
 hr {
   height: 0;
-  border: 1px dashed;
+  border: 1px $border-style;
+  margin: auto 0;
 }
 
 // Pre & Highlighting Junk
 blockquote {
   padding-left: 1em;
-  border-left: 3px solid var(--primary-invert);
+  border-left: 3px $alt-border-style var(--primary-invert);
 }
 
 pre {
-  border: 2px solid;
+  border: 2px $alt-border-style;
   padding: 10px;
   overflow-x: auto;
-}
-
-code {
-  color: var(--secondary-invert);
 }
 
 // Navigation
@@ -128,16 +140,15 @@ code {
 
 // Buttons
 .button, button {
+  margin: 0.67em auto;
   padding: 0.75em 1.2em;
   border-radius: 50px;
-  border: 2px solid;
-  font-family: Helvetica, Arial, sans-serif;
+  border: 2px $alt-border-style;
   text-decoration: none;
 }
 
 .icon {
   fill: var(--primary-invert);
-  display: block;
   width: 1em;
   height: 1em;
   margin-right: 0.3em; 
@@ -148,7 +159,7 @@ code {
   position: relative;
   width: 100%;
   height: 100%;
-  padding-top: 75%
+  padding-top: 75%;
   iframe {
     position: absolute;
     left: 0;

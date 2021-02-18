@@ -1,8 +1,5 @@
 ---
 ---
 
-{% if site.crust_tastic.skin %}
-  @import "{{ site.crust_tastic.skin }}/main";
-{% else %}
-  @import "base/main";
-{% endif %}
+@import "base";
+@import "skins/{{ site.crust_tastic.skin | default: "crust-tastic" }}/main";

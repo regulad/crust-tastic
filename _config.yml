@@ -13,14 +13,19 @@ defaults:
     values:
       layout: "post"
 
+crust_tastic:
+  header:
+    title: true
+    github_desc: true
+  footer:
+    github_link: true
+
 # Plugins
 plugins:
   - github-pages
 
 whitelist:
   - github-pages
-
-# Elements
 
 # Optimization
 compress_html:

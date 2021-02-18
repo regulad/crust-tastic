@@ -26,12 +26,20 @@ group :jekyll_plugins do
 end
 ```
 
-## _config.yml options
-***Nothing* is enabled by default!** Make sure to enable anything you want.
-* `github_info: truthy/falsey` Controls the GitHub description & link.
-* `favicon: truthy/falsey` Controls the favicon of the webpage. If you would like to use a custom path, substitute `truthy/falsey` with `/path/to/favicon`, otherwise it will use the root of the site.
-* `gtag: {gtag-id}` Controls site gtag. If a falsey value is provided, then gtag is disabled.
-* `gtranslate: truthy/falsey` Controls Google Translate embed.
+## `_config.yml` options
+
+```yaml
+crust_tastic:
+  favicon: truthy/falsey # Controls the favicon of the webpage. If you would like to use a custom path, substitute truthy/falsey with /path/to/favicon, otherwise it will use the root of the site.
+  gtag: G-YOURTAGHERE # Controls site gtag
+  header:
+    title: truthy/falesy # Controls Title
+    github_desc: truthy/falsey # Controls the GitHub description.
+  footer:
+    navigation: truthy/falsey # See below.
+    github_link: truthy/falsey # Controls the GitHub link at the bottom of the page.
+    google_translate: truthy/falsey # Controls google translate
+```
 
 ### Navigation
 * `navigation: truthy/falsey, or "subfolder"` Controls the navigation in the footer. See [my demo website](https://regulad.xyz/crust-tastic/) for a full example. Subfolder enables subfolders.
