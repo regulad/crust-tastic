@@ -61,7 +61,13 @@ nav a {
 
 // Headings
 .headings {
-  margin: 0.8em auto;
+  margin: 0.9em auto;
+  section {
+    margin: 0.2em auto;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: inherit;
+  }
   a {
     color: var(--primary-invert);
     text-decoration: none;
@@ -106,6 +112,9 @@ h6 {
 // Tables
 table {
   text-align: left;
+  td p {
+    margin: 0;
+  }
   th, td {
     padding: 5px 10px;
   }
@@ -142,8 +151,7 @@ pre {
 
 // Buttons
 .button, button {
-  margin: 0.67em auto;
-  padding: 0.75em 1.2em;
+  padding: 0.35em 1em;
   border-radius: 50px;
   border: 2px $alt-border-style;
   text-decoration: none;
