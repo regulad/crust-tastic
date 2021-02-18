@@ -26,6 +26,10 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 0;
+  * {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 // Containerization
@@ -33,8 +37,6 @@ body {
   width: $container-width;
   max-width: $max-container-width;
   margin: 0.6em auto;
-  max-width: 100%;
-  max-height: 100%;
 }
 
 // Links

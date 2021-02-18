@@ -27,6 +27,7 @@ end
 ```
 
 ## `_config.yml` options
+Nothing is turned on by default, so you prob want to turn on some things.
 
 ```yaml
 crust_tastic:
