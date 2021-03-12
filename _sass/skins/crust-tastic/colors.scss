@@ -1,0 +1,18 @@
+// Colors
+:root {
+  --primary: #{$primary};
+  --primary-invert: #{invert($primary, $weight: 100%)};
+  --secondary: #{$secondary};
+  --secondary-invert: #{invert($secondary, $weight: 100%)};
+  --active: #{$active};
+  --inactive: #{$inactive};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+      --primary: #{invert($primary, $weight: 100%)};
+      --primary-invert: #{$primary};
+      --secondary: #{invert($secondary, $weight: 100%)};
+      --secondary-invert: #{$secondary};
+  }
+}
