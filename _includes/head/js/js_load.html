@@ -1,1 +1,7 @@
-<script src="{{ include.file }}"></script>
+{% if include.async %}
+  <script async type="text/javascript" src="{{ include.file | relative_url }}"></script>
+{% elsif include.defer %}
+  <script defer type="text/javascript" src="{{ include.file | relative_url }}"></script>
+{% else %}
+  <script type="text/javascript" src="{{ include.file | relative_url }}"></script>
+{% endif %}

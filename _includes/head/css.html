@@ -1,3 +1,12 @@
 {% include head/css/css_load.html file="/assets/css/style.css" %}
 {% include head/css/css_load.html file="/assets/css/highlight.css" %}
 {% include head/css/css_load.html file="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" %}
+{% if site.crust_tastic.footer.google_translate %}
+  {% include head/css/css_load.html file="/assets/css/google_translate.css" %}
+{% endif %}
+{% if site.crust_tastic.header.pin %}
+  {% include head/css/css_load.html file="/assets/css/pin_header.css" %}
+{% endif %}
+{% if site.crust_tastic.footer.jump %}
+  {% include head/css/css_load.html file="/assets/css/jump_to_top.css" %}
+{% endif %}

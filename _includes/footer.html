@@ -1,22 +1,20 @@
-<div id="main_footer" class="mega_container">
+<div id="main_footer" class="flex_container">
   {% include elements/divider.html %}
-  <div class="container">
-    <footer class="headings">
-      {% if site.crust_tastic.footer.navigation == 'subfolder' %}
-        {% include footer/navigation_subfolder.html %}
-      {% elsif site.crust_tastic.footer.navigation %}
-        {% include footer/navigation.html %}
-      {% endif %}
-      {% if site.crust_tastic.footer.navigation %}
-        <br>
-      {% endif %}
-      {% if site.crust_tastic.footer.github_link %}
-        {% include footer/github_link.html %}
-      {% endif %}
+  <footer class="container heading">
+    {% if site.crust_tastic.footer.navigation == 'subfolder' %}
+      {% include footer/navigation_subfolder.html %}
+    {% elsif site.crust_tastic.footer.navigation %}
+      {% include footer/navigation.html %}
+    {% endif %}
+    {% if site.crust_tastic.footer.navigation %}
       <br>
-      {% if site.crust_tastic.footer.google_translate %}
-        {% include footer/google_translate_element.html %}
-      {% endif %}
-    </footer>
-  </div>
+    {% endif %}
+    {% if site.crust_tastic.footer.github_link %}
+      {% include footer/github_link.html %}
+    {% endif %}
+    <br>
+    {% if site.crust_tastic.footer.google_translate %}
+      {% include footer/google_translate_element.html %}
+    {% endif %}
+  </footer>
 </div>

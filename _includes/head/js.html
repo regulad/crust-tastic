@@ -1,6 +1,15 @@
+{% include head/js/js_load.html file="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" %}
 {% if site.crust_tastic.gtag %}
-  {% include head/js/gtag.html %}
+  {% include head/js/js_load.html file="https://www.googletagmanager.com/gtag/js?id={{ site.crust_tastic.gtag }}" %}
+  {% include head/js/js_load.html file="/assets/js/gtag.js" %}
 {% endif %}
 {% if site.crust_tastic.footer.google_translate %}
-  {% include head/js/google_translate.html %}
+  {% include head/js/js_load.html file="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" %}
+  {% include head/js/js_load.html file="/assets/js/google_translate.js" %}
+{% endif %}
+{% if site.crust_tastic.header.pin %}
+  {% include head/js/js_load.html file="/assets/js/pin_header.js" %}
+{% endif %}
+{% if site.crust_tastic.footer.jump %}
+  {% include head/js/js_load.html file="/assets/js/jump_to_top.js" %}
 {% endif %}

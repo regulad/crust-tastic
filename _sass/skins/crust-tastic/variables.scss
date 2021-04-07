@@ -1,6 +1,6 @@
 // Colors (For dark mode, primary and secondary are inverted.)
 $primary: white; // Primary color: Inverse is used for text
-$secondary: #ddd; // Secondary color: Used for background
+$secondary: #e5e8e1; // Secondary color: Used for background
 $active: blue; // Used for links and other interative elements
 $inactive: purple; // Used for links and other interactive elements that have already been interacted with
 
@@ -10,6 +10,8 @@ $font-face: 'Roboto', sans-serif; // Font Face
 
 // Container Width
 $container-width: 75vw; // Width of the main content containers
+$heading-width: 85vw; // Width of headings, like headers and footers
+$max-heading-width: 120em; // Maximum width of headings
 $max-container-width: 100em; // Maximum width of the main content containers
 
 // Elements

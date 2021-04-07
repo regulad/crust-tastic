@@ -50,7 +50,9 @@ crust_tastic:
   header:
     title: true # Controls Title
     github_desc: true # Controls the GitHub description.
+    pin: true # Pins header to the top of the page.
   footer:
     navigation: false # See below.
     github_link: true # Controls the GitHub link at the bottom of the page.
     google_translate: true # Controls google translate
+    jump: true # Controls displaying the "Jump to top of page button."
