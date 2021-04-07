@@ -1,4 +1,6 @@
-# Defaults
+# Jekyll
+remote_theme: regulad/crust-tastic@main
+
 defaults:
   -
     scope:
@@ -40,3 +42,15 @@ compress_html:
 
 sass:
   style: compressed
+
+# crust-tastic
+crust_tastic:
+  favicon: false # Controls the favicon of the webpage. If you would like to use a custom path, substitute truthy/falsey with /path/to/favicon, otherwise it will use the root of the site.
+  gtag: false # Controls site gtag
+  header:
+    title: true # Controls Title
+    github_desc: true # Controls the GitHub description.
+  footer:
+    navigation: false # See below.
+    github_link: true # Controls the GitHub link at the bottom of the page.
+    google_translate: true # Controls google translate

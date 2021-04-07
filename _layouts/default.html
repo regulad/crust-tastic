@@ -1,10 +1,16 @@
 ---
-layout: essential
+layout: compress
 ---
-{% if site.crust_tastic.header %}
-  {% include header.html %}
-{% endif %}
-{% include content.html %}
-{% if site.crust_tastic.footer %}
-  {% include footer.html %}
-{% endif %}
+{% include doctype.html %}
+<html>
+  {% include head.html %}
+  <body>
+    {% if site.crust_tastic.header %}
+      {% include header.html %}
+    {% endif %}
+    {% include body.html %}
+    {% if site.crust_tastic.footer %}
+      {% include footer.html %}
+    {% endif %}
+  </body>
+</html>
