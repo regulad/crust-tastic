@@ -1,4 +1,15 @@
-{% include addons/css/google_translate.css %}
-{% include addons/css/header_menu.css %}
-{% include addons/css/jump_to_top.css %}
-{% include addons/css/pin_header.css %}
+{% if site.crust_tastic.addons.google_translate %}
+  {% include addons/css/google_translate.css %}
+{% endif %}
+{% if site.crust_tastic.addons.gtag %}
+  {% include addons/css/gtag.css%}
+{% endif %}
+{% if site.crust_tastic.addons.header_menu %}
+  {% include addons/css/header_menu.css %}
+{% endif %}
+{% if site.crust_tastic.addons.jump_to_top %}
+  {% include addons/css/jump_to_top.css %}
+{% endif %}
+{% if site.crust_tastic.addons.pin_header %}
+  {% include addons/css/pin_header.css %}
+{% endif %}
