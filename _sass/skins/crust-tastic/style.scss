@@ -4,8 +4,6 @@ body {
   background-color: var(--secondary);
   font-family: $font-face;
   font-size: $font-size;
-  display: flex;
-  flex-direction: column;
   * {
     max-width: 100%;
     max-height: 100%;
@@ -16,10 +14,13 @@ body {
 .flex_container {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
-.container {
-  margin: auto;
+.flex_container.flex_container_row {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 // Links
@@ -47,6 +48,7 @@ nav a {
   width: $container-width;
   max-width: $max-container-width;
   margin: auto;
+  padding-top: 0.3em;
 }
 
 .heading {

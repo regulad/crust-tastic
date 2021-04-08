@@ -1,0 +1,5 @@
+<nav id="navigation">
+  {% for item in site.data.navigation.entries %}
+    <a href="{{ item.url | relative_url }}" class="button">{{ item.page }}</a>
+  {% endfor %}
+</nav>

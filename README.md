@@ -13,13 +13,9 @@ A lightweight & versatile Jekyll theme designed for GitHub-Pages
 * Compatible with all browsers (designed to Mozilla spec)
 
 ## Setup
-Want to use this theme? Follow the instructions below.
+Want to use this theme?
 
-### New Site
-If you are making a new site, just use [this template (regulad/crust-tastic-template)](https://github.com/regulad/crust-tastic-template).
-
-### Existing Site
-Want to migrate your site to this theme? Simply add these lines to your `_config.yml`:
+Add these lines to your `_config.yml`, or update them if they are already present.
 
 ```yaml
 remote_theme: regulad/crust-tastic@main # You can also use the latest tag.
@@ -49,11 +45,14 @@ Some sensible settings can be seen in `_config.yml`.
 crust_tastic:
   favicon: truthy/falsey # Controls the favicon of the webpage. If you would like to use a custom path, substitute truthy/falsey with /path/to/favicon, otherwise it will use the root of the site.
   gtag: G-YOURTAGHERE # Controls site gtag.
-  header:
+  header: # Controls displaying the header.
+    menu:
+      google_search: 96969696969696969 # Controls Google Programmable Search. Enter your CX value.
+      navigation: false # See below.
     title: truthy/falesy # Controls displaying the title.
     github_desc: truthy/falsey # Controls showing the GitHub description next to the title.
     pin: true # Pins header to the top of the page.
-  footer:
+  footer: # Controls displaying the footer.
     navigation: truthy/falsey # See below.
     github_link: truthy/falsey # Controls the GitHub link at the bottom of the page.
     google_translate: truthy/falsey # Controls google translate.

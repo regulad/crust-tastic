@@ -1,3 +1,8 @@
-<section id="title">
-  <h1><a href="{{ '/' | relative_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-</section>
+<div id="titles">
+  {% if site.crust_tastic.header.title %}
+    {% include header/title/title.html %}
+  {% endif %}
+  {% if site.crust_tastic.header.github_desc %}
+    {% include header/title/github_desc.html %}
+  {% endif %}
+</div>
