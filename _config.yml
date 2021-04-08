@@ -53,9 +53,9 @@ crust_tastic:
       navigation: true
     jump_to_top: true
     pin_header: true
+    google_translate: true
   header:
     title: true
     github_desc: true
   footer:
     github_link: true
-    google_translate: true

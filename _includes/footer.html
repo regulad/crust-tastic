@@ -1,12 +1,12 @@
-<div id="main_footer" class="flex_container">
+<footer id="main_footer">
   {% include elements/divider.html %}
-  <footer class="container heading">
+  <section class="container heading">
     {% if site.crust_tastic.footer.github_link %}
       {% include footer/github_link.html %}
     {% endif %}
     <br>
-    {% if site.crust_tastic.footer.google_translate %}
-      {% include footer/google_translate_element.html %}
+    {% if site.crust_tastic.addons.google_translate %}
+      {% include addons/html/google_translate_element.html %}
     {% endif %}
   </footer>
 </div>

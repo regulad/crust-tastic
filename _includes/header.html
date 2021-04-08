@@ -1,11 +1,13 @@
 <div id="main_header" class="front">
   <header class="flex_container flex_container_row heading">
-    <div class="container">
+    <div id="titles" class="container">
       {% include header/title.html %}
     </div>
-    {% if site.crust_tastic.addons.menu %}
-      <div class="container">
-        {% include header/menu.html %}
+    {% if site.crust_tastic.addons.header_menu %}
+      <div id="header_menu" class="container">
+        {% include addons/html/header_menu.html %}
       </div>
     {% endif %}
   </header>
+  <hr>
+</div>

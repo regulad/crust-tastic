@@ -2,3 +2,6 @@
   width: 15em;
   max-width: 50%;
 }
+#google_translate_element, #google_translate_element * {
+  max-width: 100%;
+}

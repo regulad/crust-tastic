@@ -1,8 +1,6 @@
-<div id="titles">
-  {% if site.crust_tastic.header.title %}
-    {% include header/title/title.html %}
-  {% endif %}
-  {% if site.crust_tastic.header.github_desc %}
-    {% include header/title/github_desc.html %}
-  {% endif %}
-</div>
+{% if site.crust_tastic.header.title %}
+  {% include header/title/title.html %}
+{% endif %}
+{% if site.crust_tastic.header.github_desc %}
+  {% include header/title/github_desc.html %}
+{% endif %}
