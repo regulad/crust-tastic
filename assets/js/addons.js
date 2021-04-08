@@ -1,0 +1,3 @@
+---
+---
+{% include addons/js.js %}

@@ -1,16 +1,8 @@
-{% include head/css/css_load.html file="/assets/css/style.css" %}
-{% include head/css/css_load.html file="/assets/css/highlight.css" %}
-{% include head/css/css_load.html file="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" %}
-{% include head/css/css_load.html file="https://use.fontawesome.com/releases/v5.7.2/css/all.css" %}
-{% if site.crust_tastic.footer.google_translate %}
-  {% include head/css/css_load.html file="/assets/css/google_translate.css" %}
-{% endif %}
-{% if site.crust_tastic.header.menu %}
-  {% include head/css/css_load.html file="/assets/css/header_menu.css" %}
-{% endif %}
-{% if site.crust_tastic.header.pin %}
-  {% include head/css/css_load.html file="/assets/css/pin_header.css" %}
-{% endif %}
-{% if site.crust_tastic.footer.jump %}
-  {% include head/css/css_load.html file="/assets/css/jump_to_top.css" %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/highlight.css' | relative_url }}">
+{% if site.crust_tastic.addons %}
+  <link rel="stylesheet" href="{{ '/assets/css/addons.css' | relative_url }}">
+  {% include addons/css_load.html %}
 {% endif %}
