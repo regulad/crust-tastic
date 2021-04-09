@@ -1,9 +1,6 @@
 {% if site.crust_tastic.addons.google_translate %}
   {% include addons/css/google_translate.css %}
 {% endif %}
-{% if site.crust_tastic.addons.gtag %}
-  {% include addons/css/gtag.css %}
-{% endif %}
 {% if site.crust_tastic.addons.header_menu %}
   {% include addons/css/header_menu.css %}
 {% endif %}
