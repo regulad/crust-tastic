@@ -1,10 +1,10 @@
-<div id="main_header" class="front">
+<div id="main_header" class="content_bumper front front_down">
   <header class="flex_container flex_container_row heading">
     <div id="titles" class="container">
       {% include header/title.html %}
     </div>
     {% if site.crust_tastic.addons.header_menu %}
-      <div id="header_menu" class="container">
+      <div id="header_menu" class="flex_container">
         {% include addons/html/header_menu.html %}
       </div>
     {% endif %}

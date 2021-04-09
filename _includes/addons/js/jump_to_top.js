@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  $('#jump_to_top').hide();
   $(window).scroll(function() {
     if($(this).scrollTop() > 0)
     {

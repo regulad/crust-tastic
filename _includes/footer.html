@@ -1,12 +1,15 @@
-<footer id="main_footer">
-  {% include elements/divider.html %}
-  <section class="container heading">
-    {% if site.crust_tastic.footer.github_link %}
-      {% include footer/github_link.html %}
-    {% endif %}
-    <br>
-    {% if site.crust_tastic.addons.google_translate %}
-      {% include addons/html/google_translate_element.html %}
-    {% endif %}
+<div id="main_footer"class="content_bumper">
+  <hr>
+  <footer class="container heading">
+    <section id="github_links">
+      {% if site.crust_tastic.footer.github_link %}
+        {% include footer/github_link.html %}
+      {% endif %}
+    </section>
+    <section id="google_translate">
+      {% if site.crust_tastic.addons.google_translate %}
+        {% include addons/html/google_translate_element.html %}
+      {% endif %}
+    </section>
   </footer>
 </div>

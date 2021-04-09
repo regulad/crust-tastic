@@ -1,3 +1,5 @@
 <div id="addons">
-  {% include addons/html/jump_button.html %}
+  {% if site.crust_tastic.addons.jump_to_top %}
+    {% include addons/html/jump_button.html %}
+  {% endif %}
 </div>

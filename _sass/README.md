@@ -9,3 +9,5 @@ crust_tastic:
 ```
 
 For examples on what a skin should look like, check `/skins/crust-tastic`.
+
+All skins need a `style.scss`, `colors.scss` file.

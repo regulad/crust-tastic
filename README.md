@@ -49,7 +49,7 @@ crust_tastic:
     header_menu:
       google_search: 96969696969696969 # Controls Google Programmable Search. Enter your CX value.
       navigation: false # See below.
-    jump: truthy/falesy # Controls displaying the "Jump to top of page button."
+    jump_to_top: truthy/falesy # Controls displaying the "Jump to top of page button."
     google_translate: truthy/falsey # Controls google translate.
   header: # Controls displaying the header.
     title: truthy/falesy # Controls displaying the title.

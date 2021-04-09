@@ -1,9 +1,14 @@
+// Variables
+@import "variables";
+
 // Colors
 :root {
   --primary: #{$primary};
   --primary-invert: #{invert($primary, $weight: 100%)};
   --secondary: #{$secondary};
   --secondary-invert: #{invert($secondary, $weight: 100%)};
+  --tertiary: #{$tertiary};
+  --tertiary-invert: #{invert($tertiary, $weight: 100%)};
   --active: #{$active};
   --inactive: #{$inactive};
 }
@@ -14,5 +19,7 @@
       --primary-invert: #{$primary};
       --secondary: #{invert($secondary, $weight: 100%)};
       --secondary-invert: #{$secondary};
+      --tertiary: #{invert($tertiary, $weight: 100%)};
+      --tertiary-invert: #{$tertiary};
   }
 }

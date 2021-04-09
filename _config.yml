@@ -46,14 +46,6 @@ sass:
 # crust-tastic
 crust_tastic:
   favicon: /assets/favicon
-  gtag: G-YN9EE1LSN6
-  addons:
-    header_menu:
-      google_search: 9529ba9eddd925044
-      navigation: true
-    jump_to_top: true
-    pin_header: true
-    google_translate: true
   header:
     title: true
     github_desc: true
