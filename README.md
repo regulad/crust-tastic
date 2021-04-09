@@ -44,17 +44,17 @@ Some sensible settings can be seen in `_config.yml`.
 ```yaml
 crust_tastic:
   favicon: truthy/falsey # Controls the favicon of the webpage. If you would like to use a custom path, substitute truthy/falsey with /path/to/favicon, otherwise it will use the root of the site.
-  gtag: G-YOURTAGHERE # Controls site gtag.
   addons:
+    gtag: G-YOURTAGHERE # Controls site gtag.
     header_menu:
       google_search: 96969696969696969 # Controls Google Programmable Search. Enter your CX value.
       navigation: false # See below.
     jump_to_top: truthy/falesy # Controls displaying the "Jump to top of page button."
     google_translate: truthy/falsey # Controls google translate.
+    pin_header: true # Pins header to the top of the page.
   header: # Controls displaying the header.
     title: truthy/falesy # Controls displaying the title.
     github_desc: truthy/falsey # Controls showing the GitHub description next to the title.
-    pin: true # Pins header to the top of the page.
   footer: # Controls displaying the footer.
     navigation: truthy/falsey # See below.
     github_link: truthy/falsey # Controls the GitHub link at the bottom of the page.
