@@ -1,6 +1,7 @@
 // Variables
 @import "variables";
 
+
 // Body
 body {
   color: var(--primary-invert);
@@ -67,6 +68,10 @@ nav a {
 hr {
   border: 1px $border-style;
   margin: 0.13em auto;
+}
+
+section img {
+  max-width: 100%
 }
 
 // Headings
