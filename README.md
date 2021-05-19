@@ -1,6 +1,9 @@
 # Crust-Tastic Jekyll Theme
 A lightweight & versatile Jekyll theme designed for GitHub-Pages
 
+## Archival
+Holy crap, this is horrible! Going to make a better Jekyll theme next time I want to do GH-Pages things.
+
 ## Features
 
 * Configurable & Customizable
