@@ -1,0 +1,44 @@
+#jump_to_top {
+  display: none;
+  position: fixed;
+  right: 10vw;
+  bottom: 1em;
+}
+
+#navigation {
+  margin: 0.33em;
+}
+
+.navigation_iteration * {
+  display: inline-block;
+}
+
+#navigation {
+  margin: 0.33em;
+}
+
+.navigation_iteration * {
+  display: inline-block;
+}
+
+#header_menu {
+  display: inline-block;
+  position: relative
+}
+
+#header_menu .icon {
+  font-size: 3em;
+}
+
+#header_menu_dialogue {
+  float: right;
+  display: none;
+  position: absolute;
+  overflow: auto;
+  right: 0;
+  border: 2px solid var(--primary-invert);
+  border-radius: 7px;
+  padding: 0.5em;
+  width: 40em;
+  max-width: 70vw;
+}

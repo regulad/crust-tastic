@@ -1,5 +1,11 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="{{ '/assets/js/main.js' | relative_url }}"></script>
+{% if site.crust_tastic.gtag %}
+  {% include head/js/gtag.html %}
+{% endif %}
 {% if site.crust_tastic.addons %}
   {% include addons/js_load.html %}
+{% endif %}
+{% if site.crust_tastic.header_menu.google_search %}
+  <script async type="text/javascript" src="https://cse.google.com/cse.js?cx={{ site.crust_tastic.header.menu.google_search }}"></script>
 {% endif %}

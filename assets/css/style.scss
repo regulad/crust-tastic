@@ -2,4 +2,4 @@
 ---
 
 @import "base";
-@import "skins/{{ site.crust_tastic.skin | default: "crust-tastic" }}/style";
+@import "skins/{{ site.crust_tastic.skin | default: "crust-tastic" }}/main";

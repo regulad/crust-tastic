@@ -1,9 +1,6 @@
 # Crust-Tastic Jekyll Theme
 A lightweight & versatile Jekyll theme designed for GitHub-Pages
 
-## Archival
-Holy crap, this is horrible! Going to make a better Jekyll theme next time I want to do GH-Pages things.
-
 ## Features
 
 * Configurable & Customizable
@@ -27,7 +24,7 @@ plugins:
   - github-pages
 ```
 
-Make sure your `Gemfile` is setup correctly, too.
+Make sure your `Gemfile` is set up correctly, too.
 
 ```ruby
 source 'https://rubygems.org'
@@ -46,21 +43,12 @@ Some sensible settings can be seen in `_config.yml`.
 
 ```yaml
 crust_tastic:
+  github: truthy/falsey # Controls the GitHub info displayed at the top and the bottom of the page.
+  gtag: G-YOURTAGHERE # Controls site gtag.  
   favicon: truthy/falsey # Controls the favicon of the webpage. If you would like to use a custom path, substitute truthy/falsey with /path/to/favicon, otherwise it will use the root of the site.
-  addons:
-    gtag: G-YOURTAGHERE # Controls site gtag.
-    header_menu:
-      google_search: 96969696969696969 # Controls Google Programmable Search. Enter your CX value.
-      navigation: false # See below.
-    jump_to_top: truthy/falesy # Controls displaying the "Jump to top of page button."
-    google_translate: truthy/falsey # Controls google translate.
-    pin_header: true # Pins header to the top of the page.
-  header: # Controls displaying the header.
-    title: truthy/falesy # Controls displaying the title.
-    github_desc: truthy/falsey # Controls showing the GitHub description next to the title.
-  footer: # Controls displaying the footer.
-    navigation: truthy/falsey # See below.
-    github_link: truthy/falsey # Controls the GitHub link at the bottom of the page.
+  header_menu:
+    google_search: 96969696969696969 # Controls Google Programmable Search. Enter your CX value.
+    navigation: false # See below.
 ```
 
 #### Navigation
@@ -76,20 +64,3 @@ entries:
       - page: Home
         url: /
 ```
-### Custom CSS
-There are two ways to insert custom CSS. 
-  * SCSS skin (preferred)
-    * See `_sass/README.md` for instructions.
-  * Add CSS
-    * You can create stylesheet in `assets/css` and then reference it in `_includes/head/js.html`.
-    * It will be loaded with the other stylesheets
-
-### Custom HTML
-Custom HTML can be inserted like any on any other Jekyll page.
-  * Inline HTML
-    * You can write HTML straight into your Markdown pages.
-  * Insert HTML
-    * You can create an include, preferably in `_includes/elements`, that contains HTML. This include can then be referenced normally.
-    * If you want to insert HTML into baked content, like headings, modify the existing files in `_includes`.
-  * Template HTML
-    * You can create a template that features custom HTML.

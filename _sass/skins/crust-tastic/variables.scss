@@ -1,19 +1,17 @@
 // Colors (For dark mode, primary and secondary are inverted.)
-$primary: white; // Primary color: Inverse is used for text
-$secondary: #f0f5eb; // Secondary color: Used for background
-$tertiary: #bbbeb898; // Tertiaty color: Used for things like drop shadows and borders
-$active: blue; // Used for links and other interative elements
-$inactive: purple; // Used for links and other interactive elements that have already been interacted with
+$primary: #ffffff; // Primary color: Inverse is used for text
+$secondary: #edfceb; // Secondary color: Used for background
+$tertiary: #879284; // Tertiary color: Used for things like drop shadows and borders
+$active: #94e5ff; // Used for links and other interactive elements
+$inactive: #fc62ff; // Used for links and other interactive elements that have already been interacted with
 
 // Font
 $font-size: 13pt; // Font Size
 $font-face: 'Roboto', sans-serif; // Font Face
 
 // Container Width
-$container-width: 75vw; // Width of the main content containers
-$heading-width: 85vw; // Width of headings, like headers and footers
-$max-heading-width: 120em; // Maximum width of headings
-$max-container-width: 100em; // Maximum width of the main content containers
+$container-width: 60vw; // Width of the main content containers
+$max-container-width: 90em; // Maximum width of the main content containers
 
 // Elements
 $border-style: dashed; // Style of the border, used on things like hr and tables

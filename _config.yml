@@ -15,13 +15,6 @@ defaults:
     values:
       layout: "post"
 
-crust_tastic:
-  header:
-    title: true
-    github_desc: true
-  footer:
-    github_link: true
-
 # Plugins
 plugins:
   - github-pages
@@ -45,9 +38,6 @@ sass:
 
 # crust-tastic
 crust_tastic:
-  favicon: /assets/favicon
-  header:
-    title: true
-    github_desc: true
-  footer:
-    github_link: true
+  github: true
+  header_menu:
+    navigation: true

@@ -1,7 +1,6 @@
 // Variables
 @import "variables";
 
-
 // Body
 body {
   color: var(--primary-invert);
@@ -20,6 +19,16 @@ body {
 .flex_container.flex_container_row {
   flex-direction: row;
   justify-content: space-between;
+}
+
+#main_header {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+#main_content {
+  margin-top: 5em;
 }
 
 // Links
@@ -52,6 +61,7 @@ nav a {
 
 .front {
   background-color: var(--secondary);
+  z-index: 99;
   box-shadow: 0.26em 0.26em 7px var(--tertiary);
 }
 
@@ -76,8 +86,8 @@ section img {
 
 // Headings
 .heading {
-  width: $heading-width;
-  max-width: $max-heading-width;
+  width: $container-width + 10vw;
+  max-width: $max-container-width + 5em;
   margin: 0.9em auto;
   vertical-align: middle;
   section {

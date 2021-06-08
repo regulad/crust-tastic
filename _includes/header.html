@@ -3,9 +3,9 @@
     <div id="titles" class="container">
       {% include header/title.html %}
     </div>
-    {% if site.crust_tastic.addons.header_menu %}
+    {% if site.crust_tastic.header_menu %}
       <div id="header_menu" class="flex_container">
-        {% include addons/html/header_menu.html %}
+        {% include header/menu.html %}
       </div>
     {% endif %}
   </header>
