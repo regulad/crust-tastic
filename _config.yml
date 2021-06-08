@@ -1,5 +1,5 @@
 # Jekyll
-remote_theme: regulad/crust-tastic@main
+remote_theme: regulad/crust-tastic
 
 defaults:
   -
