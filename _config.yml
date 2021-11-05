@@ -18,6 +18,7 @@ defaults:
 # Plugins
 plugins:
   - github-pages
+  - jekyll-seo-tag
 
 whitelist:
   - github-pages
