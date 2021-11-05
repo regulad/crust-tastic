@@ -45,6 +45,7 @@ Some sensible settings can be seen in `_config.yml`.
 crust_tastic:
   github: truthy/falsey # Controls the GitHub info displayed at the top and the bottom of the page.
   gtag: G-YOURTAGHERE # Controls site gtag.  
+  gads: ca-pub-1010101010101010 # Controls site google ads
   favicon: truthy/falsey # Controls the favicon of the webpage. If you would like to use a custom path, substitute truthy/falsey with /path/to/favicon, otherwise it will use the root of the site.
   header_menu:
     google_search: 96969696969696969 # Controls Google Programmable Search. Enter your CX value.
